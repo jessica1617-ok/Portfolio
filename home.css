@@ -1,0 +1,491 @@
+/* In General*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button{
+  cursor: pointer;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #171725;
+  color: white;
+}
+#des{
+color: #820bff;
+
+/*NAVBAR*/
+}
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-left: auto;
+  margin-right: 30px;
+
+}
+.nav-links a{
+  transition: 0.3s;
+}
+
+.nav-links a:hover{
+  color: #820bff;
+  font-size: 14px;
+}
+#logo{
+  font-size: 25px;
+  font-weight: bold;
+  color: #820bff;
+}
+#contact-btn{
+  border: #820bff solid 1px;
+  padding: 12px 22px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#contact-btn:hover{
+  background-color: #820bff;
+}
+
+/*HOME*/
+.home-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 150px 20px 40px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("pexels-febe-vanermen-180443766-11212399.jpg");
+
+  background-position: center;
+  background-size: cover;
+}
+.home-section img {
+  width: 300px;
+  height: 300px;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.home-section img:hover {
+  transform: scale(1.3);
+  margin-bottom: 50px;
+}
+.home-section h1{
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+#name{
+  font-size: 50px;
+  color: #820bff;
+}
+.home-section a {
+  color: black;
+  padding: 0.8rem 1.75rem;
+}
+.home-section p{
+  max-width: 600px;
+}
+
+/* SEPARATION */
+hr{
+  border: none;
+  height: 1px;
+  background-color: white;
+}
+
+/*ABOUT*/
+.about-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.about-section img{
+  width: 40%;
+  height: 350px;
+  object-fit: cover;
+  max-width: 400px;
+}
+.about-box{
+  padding: 30px 40px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-box h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: white;
+}
+.about-infos {
+  border: #820bff solid 1px;
+  display: flex;
+  justify-content: start;
+  gap: 90px;
+  width: 100%;
+  padding: 20px ;
+  max-width: 50rem;
+}
+.about-infos ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-box button{
+  background-color: #820bff;
+  width: 20%;
+  min-width: 8rem;
+  padding: 12px 22px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+}
+.about-box button{
+  background-color: #820bff;
+  width: 20%;
+  min-width: 8rem;
+  padding: 12px 22px;
+  border-radius: 5px;
+  transition: 0.3s;
+  border: none;
+}
+.about-box button:hover{
+  background-color: #820bff;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(130, 11, 255, 0.3);
+}
+
+  /*SKILLS*/
+
+  .skills-section{
+    padding:20px;
+    margin-left: 100px;
+  }
+  .skills-section h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .skills-box{
+    display: flex;
+    gap: 20px;
+    width: 90%;
+  }
+  
+  .s-box{
+    border: solid 1px #820bff;
+    padding: 20px;
+    text-align: justify;
+    width: 30%;
+  }
+  .s-box i{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(130, 11, 255, 0.12);
+    border: 1px solid rgba(130, 11, 255, 0.3);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+
+/* =================================
+   TABLETTES : 992px
+================================= */
+
+@media screen and (max-width: 992px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  #contact-btn {
+    padding: 10px 15px;
+  }
+
+
+  /* HOME */
+
+  .home-section img {
+    width: 260px;
+    height: 260px;
+  }
+
+  #name {
+    font-size: 42px;
+  }
+
+
+  /* ABOUT */
+
+  .about-section {
+    gap: 25px;
+    padding: 20px;
+  }
+
+  .about-section img {
+    width: 35%;
+    height: 300px;
+  }
+
+  .about-box {
+    padding: 20px;
+  }
+
+  .about-infos {
+    gap: 25px;
+    padding: 15px;
+  }
+
+
+  /* SKILLS */
+
+  .skills-section {
+    margin-left: 30px;
+  }
+
+  .skills-box {
+    width: 95%;
+    gap: 15px;
+  }
+
+  .s-box {
+    padding: 15px;
+  }
+
+}
+
+
+/* =================================
+   TÉLÉPHONES : 768px
+================================= */
+
+@media screen and (max-width: 768px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  #contact-btn {
+    display: none;
+  }
+
+
+  /* HOME */
+
+  .home-section {
+    padding: 150px 20px 40px;
+  }
+
+  .home-section img {
+    width: 75%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .home-section h1 {
+    font-size: 26px;
+  }
+
+  #name {
+    font-size: 35px;
+  }
+
+  .home-section p {
+    font-size: 14px;
+  }
+
+
+  /* ABOUT */
+
+  .about-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .about-section img {
+    width: 80%;
+    max-width: 350px;
+    height: 280px;
+  }
+
+  .about-box {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  .about-box h2 {
+    font-size: 28px;
+  }
+
+  .about-infos {
+    width: auto;
+    gap: 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .about-infos ul {
+    gap: 15px;
+  }
+
+
+  /* SKILLS */
+
+  .skills-section {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .skills-section h2 {
+    font-size: 28px;
+  }
+
+  .skills-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .s-box {
+    width: auto;
+  }
+
+}
+
+
+/* =================================
+   PETITS TÉLÉPHONES : 480px
+================================= */
+
+@media screen and (max-width: 480px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  #logo {
+    font-size: 22px;
+  }
+
+  .nav-links {
+    gap: 9px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+
+  /* HOME */
+
+  .home-section {
+    padding: 130px 15px 35px;
+  }
+
+  .home-section img {
+    width: 70%;
+    max-width: 210px;
+  }
+
+  .home-section h1 {
+    font-size: 22px;
+  }
+
+  #name {
+    font-size: 29px;
+  }
+
+
+  /* ABOUT */
+
+  .about-section img {
+    width: 90%;
+    height: 250px;
+  }
+
+  .about-box {
+    padding: 10px;
+  }
+
+  .about-infos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-box button {
+    width: auto;
+    align-self: flex-start;
+  }
+
+
+  /* SKILLS */
+
+  .skills-section {
+    padding: 15px;
+  }
+
+  .s-box {
+    padding: 15px;
+  }
+
+}
