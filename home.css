@@ -1,29 +1,31 @@
 /* In General*/
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0;
   margin: 0;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 a {
   text-decoration: none;
-  color: white;
-}
+}   
 button{
   cursor: pointer;
 }
 
 body {
   min-height: 100vh;
-  background-color: #171725;
-  color: white;
+  background-color: #fefee2;
 }
-#des{
-color: #820bff;
-
+h2{
+  font-size: 40px;
+    margin-bottom: 30px;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 /*NAVBAR*/
-}
+
 header {
   width: 100%;
   position: absolute;
@@ -45,83 +47,102 @@ header {
   list-style: none;
   margin-left: auto;
   margin-right: 30px;
-
+  
 }
 .nav-links a{
   transition: 0.3s;
+  font-weight: 1000px;
+  font-family: "Montserrat", sans-serif;  
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .nav-links a:hover{
-  color: #820bff;
+  color: #6b0f1a;
   font-size: 14px;
 }
 #logo{
-  font-size: 25px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  font-size: 40px;
   font-weight: bold;
-  color: #820bff;
+  color: #6b0f1a;
 }
 #contact-btn{
-  border: #820bff solid 1px;
+  border: #6b0f1a solid 1px;
   padding: 12px 22px;
   border-radius: 5px;
   transition: 0.3s;
 }
 #contact-btn:hover{
-  background-color: #820bff;
+  background-color: #6b0f1a;
+  color: white;
 }
 
 /*HOME*/
 .home-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  text-align: center;
 
   padding: 150px 20px 40px;
 
-  background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("pexels-febe-vanermen-180443766-11212399.jpg");
-
+     /* background:
+    linear-gradient(rgba(0, 0, 0, 0.352), rgba(0, 0, 0, 0.281)),
+    url("Images/background-1.jpg"); 
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
+
+  position: relative;
+  height: 500px;
+  max-height: 600px;
 }
 .home-section img {
-  width: 300px;
-  height: 300px;
-  max-width: 500px;
-  max-height: 500px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
+  position: absolute;
+  z-index: 3;
+  width: auto;
+  height: 500px;
+  object-fit: contain;
+  top: 120px;
+  bottom: 0;
   transition: 0.3s;
 }
-.home-section img:hover {
-  transform: scale(1.3);
-  margin-bottom: 50px;
-}
-.home-section h1{
-  font-size: 35px;
-  margin-bottom: 15px;
-}
-#name{
-  font-size: 50px;
-  color: #820bff;
-}
-.home-section a {
-  color: black;
-  padding: 0.8rem 1.75rem;
-}
-.home-section p{
-  max-width: 600px;
+.home-section img:hover{
+  transform: scale(0.9);
 }
 
-/* SEPARATION */
-hr{
-  border: none;
-  height: 1px;
-  background-color: white;
+#hey{
+   font-family: "Allura", cursive; 
+   font-size: 190px;
+   position: absolute;
+   top: 80px;
+   right: 60%;
+}
+#jessica{
+  font-family: "Anton", sans-serif;
+  color: #6b0f1a;
+  font-size: 193px;
+  position: absolute;
+  top: 200px;
+  right: 60%;
+}
+#ehiem{
+  font-family: "Anton", sans-serif;
+  color: #6b0f1a;
+  font-size: 240px;
+  position: absolute;
+  top: 240px;
+  left: 60%;
+}
+.home-section p{
+  font-family: "Anton", sans-serif;
+  position: absolute;
+  font-size: 20px;
+  text-align: center;
+  bottom: 10px;
+  z-index: 6;
+  letter-spacing: 2px;
 }
 
 /*ABOUT*/
@@ -130,11 +151,15 @@ hr{
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 500px;
+  max-height: 600px;
 }
 .about-section img{
   width: 40%;
-  height: 350px;
-  object-fit: cover;
+  height: 500px;
+  object-fit: contain;
   max-width: 400px;
 }
 .about-box{
@@ -144,19 +169,18 @@ hr{
   flex-direction: column;
   gap: 20px;
 }
-.about-box h2 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  color: white;
-}
 .about-infos {
-  border: #820bff solid 1px;
+  background-color: #6b0f1a;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 90px;
-  width: 100%;
+  width: 80%;
   padding: 20px ;
   max-width: 50rem;
+  border-radius: 25px;
+}
+.about-infos li{
+  color: #fefee2;
 }
 .about-infos ul{
   list-style: none;
@@ -164,65 +188,85 @@ hr{
   flex-direction: column;
   gap: 20px;
 }
-.about-box button{
-  background-color: #820bff;
+.about-box a{
+  background-color: transparent;
+  border: solid 2px #6b0f1a;
   width: 20%;
   min-width: 8rem;
   padding: 12px 22px;
   border-radius: 5px;
   transition: 0.3s;
-  border: none;
+  color: black;
+  text-align: center;
 }
-.about-box button{
-  background-color: #820bff;
-  width: 20%;
-  min-width: 8rem;
-  padding: 12px 22px;
-  border-radius: 5px;
-  transition: 0.3s;
-  border: none;
-}
-.about-box button:hover{
-  background-color: #820bff;
-  color: white;
+.about-box a:hover{
+  background-color: #6b0f1a;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(130, 11, 255, 0.3);
+  color: white;
 }
 
-  /*SKILLS*/
+  /*SERVICES*/
 
-  .skills-section{
-    padding:20px;
-    margin-left: 100px;
+  .services-section{
+    display: flex;
+    flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 500px;
+  max-height: 600px;
+  border-radius: 30px;
+  padding: 20px;
+  position: relative;
   }
-  .skills-section h2{
-    font-size: 32px;
-    margin-bottom: 30px;
+  .services-section h2{
+    position: absolute;
+    top: 10px;
+    left: 16%;
   }
-  .skills-box{
+  .services-box{
     display: flex;
     gap: 20px;
     width: 90%;
   }
   
   .s-box{
-    border: solid 1px #820bff;
-    padding: 20px;
-    text-align: justify;
+    background-color: #6b0f1a;
+    border-radius: 10%;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .dev{
+    position: absolute;
+    z-index: 4;
+    bottom: 60px;
+  }
+  .s-box p{
+    color: #fefee2;
+  }
+  .s-box h3{
+    margin-bottom: 10px;
+    font-family: "Allura", cursive;
+    font-size: 30px;
+    color: #fefee2;
   }
   .s-box i{
     width: 60px;
     height: 60px;
-    background-color: rgba(130, 11, 255, 0.12);
-    border: 1px solid rgba(130, 11, 255, 0.3);
+    background-color:#6b0f1a;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
   }
-
+i{
+  color: white;
+}
 
 /* =================================
    TABLETTES : 992px
@@ -281,11 +325,11 @@ hr{
 
   /* SKILLS */
 
-  .skills-section {
+  .services-section {
     margin-left: 30px;
   }
 
-  .skills-box {
+  .services-box {
     width: 95%;
     gap: 15px;
   }
@@ -387,18 +431,18 @@ hr{
   }
 
 
-  /* SKILLS */
+  /* services */
 
-  .skills-section {
+  .services-section {
     margin-left: 0;
     padding: 20px;
   }
 
-  .skills-section h2 {
+  .services-section h2 {
     font-size: 28px;
   }
 
-  .skills-box {
+  .services-box {
     flex-direction: column;
     width: 100%;
   }
