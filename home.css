@@ -8,8 +8,8 @@
 }
 a {
   text-decoration: none;
-}   
-button{
+}
+button {
   cursor: pointer;
 }
 
@@ -17,12 +17,16 @@ body {
   min-height: 100vh;
   background-color: #fefee2;
 }
-h2{
+h2 {
   font-size: 40px;
-    margin-bottom: 30px;
-    font-family: "Anton", sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+hr {
+  border: none;
+  box-shadow: #6b0f1a 0px 0px 1px 1px;
 }
 /*NAVBAR*/
 
@@ -45,38 +49,26 @@ header {
   display: flex;
   gap: 30px;
   list-style: none;
-  margin-left: auto;
   margin-right: 30px;
-  
 }
-.nav-links a{
+.nav-links a {
   transition: 0.3s;
   font-weight: 1000px;
-  font-family: "Montserrat", sans-serif;  
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
   color: #6b0f1a;
   font-size: 14px;
 }
-#logo{
+#logo {
   font-family: "Anton", sans-serif;
   letter-spacing: 1px;
   font-size: 40px;
   font-weight: bold;
   color: #6b0f1a;
-}
-#contact-btn{
-  border: #6b0f1a solid 1px;
-  padding: 12px 22px;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-#contact-btn:hover{
-  background-color: #6b0f1a;
-  color: white;
 }
 
 /*HOME*/
@@ -88,7 +80,7 @@ header {
 
   padding: 150px 20px 40px;
 
-     /* background:
+  /* background:
     linear-gradient(rgba(0, 0, 0, 0.352), rgba(0, 0, 0, 0.281)),
     url("Images/background-1.jpg"); 
   background-position: center;
@@ -101,52 +93,90 @@ header {
 .home-section img {
   position: absolute;
   z-index: 3;
-  width: auto;
-  height: 500px;
+  width: 50%;
+  max-width: 600px;
+  height: 550px;
   object-fit: contain;
   top: 120px;
   bottom: 0;
   transition: 0.3s;
 }
-.home-section img:hover{
-  transform: scale(0.9);
+.home-section img:hover {
+  transform: scale(1.1);
 }
-
-#hey{
-   font-family: "Allura", cursive; 
-   font-size: 190px;
-   position: absolute;
-   top: 80px;
-   right: 60%;
+#hey {
+  font-family: "Allura", cursive;
+  font-size: 150px;
+  position: absolute;
+  top: 100px;
+  right: 60%;
+  white-space: nowrap;
 }
-#jessica{
+#jessica {
   font-family: "Anton", sans-serif;
   color: #6b0f1a;
-  font-size: 193px;
+  font-size: 170px;
   position: absolute;
   top: 200px;
-  right: 60%;
+  right: 56%;
 }
-#ehiem{
+#ehiem {
   font-family: "Anton", sans-serif;
   color: #6b0f1a;
-  font-size: 240px;
+  font-size: 200px;
   position: absolute;
   top: 240px;
   left: 60%;
 }
-.home-section p{
+.home-section p {
   font-family: "Anton", sans-serif;
   position: absolute;
   font-size: 20px;
   text-align: center;
-  bottom: 10px;
+  bottom: 30%;
+  right: 62%;
   z-index: 6;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.social-icons {
+  position: absolute;
+  z-index: 6;
+  bottom: 20%;
+  right: 15%;
+  display: flex;
+  gap: 20px;
+  /* background-color: #6b0f1a; */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: #6b0f1a 0px 5px 5px;
+}
+.social-icons a {
+  font-size: 20px;
+  color: #6b0f1a;
+  transition: 0.3s;
+}
+.social-icons a:hover{
+  transform: scale(1.2);
+}
+#contact-btn {
+  position: absolute;
+  z-index: 6;
+  bottom: 20%;
+  right: 75%;
+  border: #6b0f1a solid 1px;
+  padding: 12px 22px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#contact-btn:hover {
+  background-color: #6b0f1a;
+  color: white;
 }
 
 /*ABOUT*/
-.about-section{
+.about-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,14 +185,23 @@ header {
   margin-right: 10px;
   height: 500px;
   max-height: 600px;
+  background-color: #fefee2;
+  padding: 20px;
 }
-.about-section img{
+.about-section img {
   width: 40%;
   height: 500px;
-  object-fit: contain;
+   object-fit: contain;
+  object-position: top;
   max-width: 400px;
+  padding: 0;
+  border-radius: 50px;
+  transition: 0.3s;
 }
-.about-box{
+.about-section img:hover {
+  box-shadow: #6b0f1a 0px 10px 10px;
+}
+.about-box {
   padding: 30px 40px;
   max-width: 700px;
   display: flex;
@@ -175,20 +214,20 @@ header {
   justify-content: center;
   gap: 90px;
   width: 80%;
-  padding: 20px ;
+  padding: 20px;
   max-width: 50rem;
   border-radius: 25px;
 }
-.about-infos li{
+.about-infos li {
   color: #fefee2;
 }
-.about-infos ul{
+.about-infos ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.about-box a{
+.about-box a {
   background-color: transparent;
   border: solid 2px #6b0f1a;
   width: 20%;
@@ -199,118 +238,454 @@ header {
   color: black;
   text-align: center;
 }
-.about-box a:hover{
+.about-box a:hover {
   background-color: #6b0f1a;
   transform: translateY(-3px);
   color: white;
 }
 
-  /*SERVICES*/
+/*SERVICES*/
 
-  .services-section{
-    display: flex;
-    flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+.services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 500px;
   max-height: 600px;
-  border-radius: 30px;
-  padding: 20px;
-  position: relative;
-  }
-  .services-section h2{
-    position: absolute;
-    top: 10px;
-    left: 16%;
-  }
-  .services-box{
-    display: flex;
-    gap: 20px;
-    width: 90%;
-  }
-  
-  .s-box{
-    background-color: #6b0f1a;
-    border-radius: 10%;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-  .dev{
-    position: absolute;
-    z-index: 4;
-    bottom: 60px;
-  }
-  .s-box p{
-    color: #fefee2;
-  }
-  .s-box h3{
-    margin-bottom: 10px;
-    font-family: "Allura", cursive;
-    font-size: 30px;
-    color: #fefee2;
-  }
-  .s-box i{
-    width: 60px;
-    height: 60px;
-    background-color:#6b0f1a;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-i{
-  color: white;
+  margin-bottom: 40px;
 }
 
-/* =================================
-   TABLETTES : 992px
-================================= */
+#what-i-can-do {
+  font-family: "Allura", cursive;
+  font-size: 170px;
+  white-space: nowrap;
+  color: #6b0f1a;
+  transition: 0.3s;
+}
 
-@media screen and (max-width: 992px) {
+.services-section h3:hover {
+  transform: translateX(20px);
 
+}
+.services-section h2 {
+  top: 10px;
+  left: 10%;
+  margin-top: 20px;
+}
+.services-box {
+  display: flex;
+  gap: 20px;
+  width: 90%;
+}
+
+.s-box {
+  background-color: #6b0f1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  width: 40%;
+  transition: 0.3s;
+}
+.s-box:hover {
+  transform: translateY(-70px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.app-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+.app-logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  top: 100px;
+}
+.s-box p {
+  color: #fefee2;
+}
+.s-box h3 {
+  font-family: montserrat, sans-serdif;
+  font-size: 28px;
+  color: #fefee2;
+}
+
+/* PROJECTS */
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.projects p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 30px;
+}
+.project-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #6b0f1a;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.project-box a {
+  display: block;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.project-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.project-box:hover .project-box img {
+  transform: scale(1.08);
+}
+.project-img.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6b0f1a37;
+  border-bottom: 1px solid #fefee2;
+}
+.project-img.placeholder span {
+  font-family: "Allura", cursive;
+  font-size: 40px;
+  color: #fefee2;
+}
+.project-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.project-infos h3 {
+  font-family: "Anton", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #fefee2;
+}
+.project-infos p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #fefee2;
+}
+.project-lang {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.project-lang span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid #fefee2;
+  border-radius: 20px;
+  color: #fefee2;
+}
+.coming-soon{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.coming-soon span{
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  color: #fefee2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* CONTACT */
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+.contact-section h2{
+  font-family: "Anton", sans-serif;
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+.contact-section h3{
+  font-family: "Anton", sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contact-section p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.contacts-box{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.contact-directly{
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+.contact-directly a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #6b0f1a;
+  padding-bottom: 5px;
+}
+.contact-directly span{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  transition: 0.3s;
+  padding: 10px;
+}
+.legend:hover{
+  transform: translateX(10px);
+  color: #6b0f1a;
+}
+.contact-directly p{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.send-email{
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+.send-email label{
+  font-family: "montserrat";
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, select{
+  border: 1px #6b0f1a solid;
+  background-color: #6b0f1a37;
+  padding: 10px;
+  border-radius: 5px;
+}
+input:focus, textarea:focus, select:focus{
+  border: none;
+  outline: none;
+  box-shadow: #6b0f1a 0px 0px 3px;
+}
+textarea{
+  background-color: #6b0f1a37;
+  border: #6b0f1a 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+#submit-btn{
+padding: 10px;
+border: #6b0f1a 1px solid;
+border-radius: 5px;
+background-color: transparent;
+transition: 0,3s;
+}
+#submit-btn:hover{
+background-color: #6b0f1a;
+color: white;
+}
+/* FOOTER */
+footer {
+  background-color: #6b0f1a;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  margin-top: 20px;
+  color: white;
+}
+footer h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+.sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.foot-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.foot-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+.fa-brands {
+  color: white;
+  size: 60px;
+  transition: 0.3s;
+}
+.fa-brands:hover {
+  transform: scale(1.2);
+}
+footer a {
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+footer a:hover {
+  transform: translateY(-5px);
+  text-shadow: 0px 1px 2px white;
+}
+footer hr {
+  height: 100px;
+  width: 0;
+  border: none;
+  border-left: 2px solid #ffffff;
+  margin: 0;
+}
+footer p {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+}
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+/* PETITS PC / GRANDES TABLETTES */
+@media screen and (max-width: 1200px) {
+  /* HOME */
+  #hey {
+    font-size: 120px;
+  }
+
+  #jessica {
+    font-size: 150px;
+  }
+
+  #ehiem {
+    font-size: 175px;
+  }
+
+  .home-section p {
+    font-size: 15px;
+  }
+
+  /* CONTACT */
+  .contact-section {
+    box-sizing: border-box;
+  }
+}
+
+/* TABLETTES */
+@media screen and (max-width: 1024px) {
   /* NAVBAR */
-
   .navbar {
     padding: 20px;
   }
 
   .nav-links {
-    gap: 18px;
+    gap: 15px;
+    margin-right: 15px;
   }
 
-  #contact-btn {
-    padding: 10px 15px;
+  #logo {
+    font-size: 32px;
   }
-
 
   /* HOME */
+  .home-section {
+    height: 450px;
+  }
 
   .home-section img {
-    width: 260px;
-    height: 260px;
+    height: 400px;
+    top: 130px;
   }
 
-  #name {
-    font-size: 42px;
+  #hey {
+    font-size: 100px;
+    right: 58%;
   }
 
+  #jessica {
+    font-size: 115px;
+    top: 190px;
+    right: 54%;
+  }
+
+  #ehiem {
+    font-size: 140px;
+    top: 240px;
+    left: 58%;
+  }
+
+  .home-section p {
+    font-size: 13px;
+    letter-spacing: 0;
+    right: 65%;
+  }
+  .social-icons{
+    right: 0%;
+  }
 
   /* ABOUT */
-
   .about-section {
-    gap: 25px;
-    padding: 20px;
+    gap: 20px;
+    /* AJOUT */
+    height: auto;
+    max-height: none;
+    min-height: 500px;
   }
 
   .about-section img {
     width: 35%;
-    height: 300px;
   }
 
   .about-box {
@@ -318,218 +693,372 @@ i{
   }
 
   .about-infos {
-    gap: 25px;
-    padding: 15px;
+    gap: 30px;
+    width: 90%;
   }
 
-
-  /* SKILLS */
-
+  /* SERVICES */
   .services-section {
-    margin-left: 30px;
-  }
-
-  .services-box {
-    width: 95%;
-    gap: 15px;
-  }
-
-  .s-box {
-    padding: 15px;
-  }
-
-}
-
-
-/* =================================
-   TÉLÉPHONES : 768px
-================================= */
-
-@media screen and (max-width: 768px) {
-
-  /* NAVBAR */
-
-  .navbar {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .nav-links {
-    gap: 12px;
-    margin-left: auto;
-    margin-right: 0;
-  }
-
-  .nav-links a {
-    font-size: 14px;
-  }
-
-  #contact-btn {
-    display: none;
-  }
-
-
-  /* HOME */
-
-  .home-section {
-    padding: 150px 20px 40px;
-  }
-
-  .home-section img {
-    width: 75%;
-    max-width: 250px;
     height: auto;
-    aspect-ratio: 1 / 1;
+    min-height: 500px;
   }
 
-  .home-section h1 {
-    font-size: 26px;
-  }
-
-  #name {
-    font-size: 35px;
-  }
-
-  .home-section p {
-    font-size: 14px;
-  }
-
-
-  /* ABOUT */
-
-  .about-section {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .about-section img {
-    width: 80%;
-    max-width: 350px;
-    height: 280px;
-  }
-
-  .about-box {
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-  }
-
-  .about-box h2 {
-    font-size: 28px;
-  }
-
-  .about-infos {
-    width: auto;
-    gap: 20px;
-    justify-content: space-between;
-    box-sizing: border-box;
-  }
-
-  .about-infos ul {
-    gap: 15px;
-  }
-
-
-  /* services */
-
-  .services-section {
-    margin-left: 0;
-    padding: 20px;
+  /* AJOUT */
+  #what-i-can-do {
+    font-size: 110px;
   }
 
   .services-section h2 {
-    font-size: 28px;
+    left: 5%;
   }
 
   .services-box {
-    flex-direction: column;
     width: 100%;
+    gap: 15px;
   }
 
   .s-box {
-    width: auto;
+    width: 33.33%;
+    padding: 15px;
   }
 
+  /* AJOUT : FOOTER */
+  footer {
+    padding: 25px 15px;
+    gap: 10px;
+  }
+
+  footer h2 {
+    font-size: 32px;
+  }
+
+  .sections {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 }
 
+/* ============================= */
+/* SMARTPHONES */
+/* ============================= */
 
-/* =================================
-   PETITS TÉLÉPHONES : 480px
-================================= */
-
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 768px) {
   /* NAVBAR */
+  header {
+    position: absolute;
+  }
 
   .navbar {
-    padding: 15px 10px;
+    flex-wrap: wrap;
+    padding: 15px 20px;
     gap: 15px;
   }
 
   #logo {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .nav-links {
-    gap: 9px;
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    flex-wrap: wrap;
   }
 
   .nav-links a {
     font-size: 12px;
   }
 
+  #contact-btn {
+    padding: 9px 14px;
+    font-size: 12px;
+    /* AJOUT */
+    right: auto;
+    left: 5%;
+  }
 
   /* HOME */
-
   .home-section {
-    padding: 130px 15px 35px;
+    height: 420px;
+    min-height: 420px;
+    padding: 130px 10px 40px;
+    overflow: hidden;
   }
 
   .home-section img {
-    width: 70%;
-    max-width: 210px;
+    height: 330px;
+    max-width: 100%;
+    top: 130px;
   }
 
-  .home-section h1 {
-    font-size: 22px;
+  #hey {
+    font-size: clamp(20px, 15vw, 110px);
+    top: 100px;
+    right: auto;
+    left: 5%;
   }
 
-  #name {
-    font-size: 29px;
+  #jessica {
+    font-size: clamp(65px, 15vw, 110px);
+    top: 175px;
+    right: auto;
+    left: 5%;
   }
 
+  #ehiem {
+    font-size: clamp(80px, 18vw, 130px);
+    top: 230px;
+    left: auto;
+    right: 2%;
+  }
+
+  .home-section p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    width: 95%;
+    bottom: 10px;
+    right: auto;
+    left: 2.5%;
+    white-space: normal;
+  }
+
+  .social-icons {
+    right: 5%;
+  }
 
   /* ABOUT */
+  .about-section {
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+    gap: 10px;
+    margin: 40px 15px;
+  }
 
   .about-section img {
-    width: 90%;
-    height: 250px;
+    width: 80%;
+    height: 300px;
   }
 
   .about-box {
-    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    gap: 15px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .about-infos {
-    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
     gap: 20px;
+    padding: 20px 15px;
+    border-radius: 15px;
   }
 
-  .about-box button {
+  .about-infos ul {
+    gap: 15px;
+  }
+
+  .about-box a {
     width: auto;
     align-self: flex-start;
   }
 
+  /* SERVICES */
+  .services-section {
+    height: auto;
+    max-height: none;
+    min-height: auto;
+    padding: 30px 15px;
+    margin: 20px 10px;
+    gap: 25px;
+  }
 
-  /* SKILLS */
+  #what-i-can-do {
+    font-size: clamp(50px, 12vw, 90px);
+    white-space: normal;
+    text-align: center;
+  }
 
-  .skills-section {
-    padding: 15px;
+  .services-section h2 {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .services-box {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
   }
 
   .s-box {
-    padding: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 220px;
+    padding: 25px;
+    border-radius: 20px;
   }
 
+  .dev {
+    position: static;
+  }
+
+  .s-box h3 {
+    font-size: 28px;
+  }
+
+  /* PROJECTS */
+  .projects {
+    padding: 30px 15px;
+  }
+
+  .projects p {
+    max-width: 100%;
+  }
+
+  /*CONTACT */
+  .contact-section {
+    padding: 30px 15px;
+  }
+
+  .contact-section h2 {
+    font-size: 34px;
+  }
+
+  .contacts-box {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-directly,
+  .send-email {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .contact-directly a {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .contact-directly span {
+    word-break: break-word;
+  }
+
+  .send-email label {
+    white-space: normal;
+  }
+
+  /* AJOUT : FOOTER */
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 15px;
+    gap: 20px;
+  }
+
+  footer h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+
+  footer hr {
+    width: 80%;
+    height: 0;
+    border-left: none;
+    border-top: 2px solid #ffffff;
+  }
+}
+
+/* ============================= */
+/* PETITS SMARTPHONES */
+/* ============================= */
+
+@media screen and (max-width: 480px) {
+  /* NAVBAR */
+  .navbar {
+    padding: 12px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+  }
+
+  #logo {
+    font-size: 25px;
+  }
+
+  /* HOME */
+  .home-section {
+    height: 370px;
+    min-height: 370px;
+  }
+
+  .home-section img {
+    height: 270px;
+    top: 135px;
+  }
+
+  #hey {
+    font-size: 50px;
+    top: 105px;
+  }
+
+  #jessica {
+    font-size: 50px;
+    top: 160px;
+    left: 1%;
+  }
+
+  #ehiem {
+    font-size: 55px;
+    top: 225px;
+    right: 1%;
+  }
+
+  .home-section p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  .social-icons {
+    gap: 12px;
+    padding: 8px 12px;
+  }
+
+  /* ABOUT */
+  .about-section img {
+    height: 250px;
+  }
+
+  .about-infos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about-infos ul {
+    gap: 12px;
+  }
+
+  /* SERVICES */
+  .s-box {
+    min-height: 200px;
+  }
+
+  /* AJOUT */
+  .project-box a {
+    height: 200px;
+  }
 }
